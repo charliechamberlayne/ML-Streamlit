@@ -20,3 +20,10 @@ with st.expander('Data'):
 
 with st.expander('Data visualisation'):
   st.scatter_chart(data=df, x='bill_length_mm', y='body_mass_g', color='species')
+
+# data prep
+with st.sidebar:
+  st.header('Input Features')
+  island = st.selectbox('Island', ('Biscoe', 'Dream', 'Torgerson'))
+  gender = st.selectbox('Gender', ('male', 'female'))
+  bill_length_mm = st.slider('Bill Length (mm)', 32.1, 59.6, 43.9)
