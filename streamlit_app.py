@@ -19,4 +19,4 @@ with st.expander('Data'):
   y
 
 with st.expander('Data visualisation'):
-  st.scatter_chart(data=df, x='bill_length_mm', y='body_mass_g', colour='species')
+  st.scatter_chart(data=df, x='bill_length_mm', y='body_mass_g', color='species')
